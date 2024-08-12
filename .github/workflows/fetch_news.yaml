@@ -21,4 +21,4 @@ jobs:
 
       # Save json file
       - name: fetch
-        runs: Rscript newsapi.R
+        run: Rscript newsapi.R
