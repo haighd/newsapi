@@ -1,6 +1,7 @@
 name: render
 on:
   workflow_dispatch:
+    branches: [ main ]
 permissions:
   contents: write
 jobs:
@@ -20,4 +21,4 @@ jobs:
 
       # Save json file
       - name: fetch
-        uses: Rscript newsapi.R
+        runs: Rscript newsapi.R
